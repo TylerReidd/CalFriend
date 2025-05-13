@@ -24,7 +24,7 @@ const Register = () => {
       setErrorMessage("Missing Fields")
     }
     else {
-      fetch("http://localhost:3000/AuthenticateUser", {
+      fetch("https://calfriend.onrender.com/api/AuthenticateUser", {
         method: "POST",
         headers: {
           "Content-Type":"application/json" },

@@ -64,7 +64,7 @@ const CreateEvent = () => {
 
     try
     {
-      const response = await fetch("http://localhost:3000/CreateEvent", {
+      const response = await fetch("https://calfriend.onrender.com/api/CreateEvent", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({event: newEvent}),

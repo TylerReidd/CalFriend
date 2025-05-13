@@ -18,7 +18,7 @@ const EventDetails = () => {
       try
       {
         const[res1] = await Promise.all([
-          fetch("http://localhost:3000/GetEventById", {
+          fetch("https://calfriend.onrender.com/api/GetEventById", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify( { eventId } )
