@@ -17,7 +17,7 @@ const Dashboard = () => {
       try
       {
         const[res1] = await Promise.all([
-          fetch("https://calfriend.onrender.com/api/GetEventsByEmail", {
+          fetch("https://calfriend.onrender.com/GetEventsByEmail", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify( { email } )
