@@ -10,11 +10,13 @@ dotenv.config();
 
 app.use(cors({
     origin: "https://cal-friend.netlify.app",
-    methods: ["GET", "POST"],
+    methods: ["GET", "POST", "PUT","DELETE"],
     credentials: true
 }));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.options('*', cors())
 
 //const username = encodeURIComponent(process.env.USERNAME);
 //const password = encodeURIComponent(process.env.PASSWORD);
