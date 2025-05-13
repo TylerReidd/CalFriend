@@ -8,7 +8,11 @@ const app = express();
 
 dotenv.config();
 
-app.use(cors());
+app.use(cors({
+    origin: "https://cal-friend.netlify.app",
+    methods: ["GET", "POST"],
+    credentials: true
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
