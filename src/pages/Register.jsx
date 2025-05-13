@@ -35,7 +35,7 @@ const Register = () => {
       .then(response => response.json())
       .then(data=> {
         if (data.success) {
-          navigate('/register');
+          navigate('/dashboard');
         } else {
           setErrorMessage("Error creating account")
         }

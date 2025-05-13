@@ -269,7 +269,8 @@ app.post('/CreateUser', async (req, res) =>
                     firstName: firstName,
                     lastName: lastName,
                     email: email,
-                    password: password
+                    password: password,
+                    confirmPassword: password
                 });
 
                 const newUserID = await usersCollection.insertOne(NewUser);
